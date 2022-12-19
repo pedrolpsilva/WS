@@ -1,0 +1,25 @@
+/* COLORS */
+.txtWhite {
+    color: var(--text);
+}
+
+.txtBlue {
+    color: var(--primary);
+}
+
+/* WEIGHT */
+.txt600 {
+    font-weight: 600;
+}
+
+/* TYPE */
+.txtTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.txtDescription {
+    font-size: 25px;
+    font-weight: 500;
+}

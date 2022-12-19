@@ -1,0 +1,225 @@
+#deleteOption > form {
+    gap: 150px;
+    flex-direction: column;
+    justify-content: center !important;
+}
+
+#deleteOption div{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+}
+
+#deleteOption p {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.modal {
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(1, 1, 1, 0.432);
+}
+
+#alterateProduct > div > form > div > a {
+    color: black;
+}
+
+.modal > form {
+    padding: 100px;
+    max-width: 1407px;
+    width: calc(70% - 200px);
+    max-height: 800px;
+    height: calc(60vh - 200px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+}
+
+form {
+    margin-bottom: 25px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form > div {
+    padding: 25px 0;
+    width: 100%;
+    height: calc(15vh - 50px);
+    gap: 25px;
+    display: flex;
+    align-items: center;
+}
+
+form > div > div {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: url(../IMG/topic2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--secondary);
+}
+
+form > div > button {
+    color: var(--primary) !important;
+}
+
+form > div > button:hover {
+    color: var(--text) !important;
+}
+
+form > section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section > div{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.input {
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    color: black;
+}
+
+input:focus {
+    outline: 0;
+}
+
+form > section  label {
+    padding-left: 15px;
+    font: 17px;
+    color: #828482;
+}
+
+#alterateProductTitle {
+    width: 25%;
+}
+
+#alterateProductName {
+    width: 65%;
+}
+
+div > label {
+    width: calc(100% - 15px);
+
+}
+div > input {
+    width: calc(100% - 40px);
+}
+
+#alterateProductLink {
+    width: 100%;
+}
+
+#productButton {
+    height: 100px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center !important;
+}
+
+@media only screen and (max-width:1024px) {
+    form {
+        width: 92%;
+        align-items: unset;
+    }
+
+    form > section {
+        width: 90% !important;
+    }
+
+    form > section > div {
+        width: unset !important;
+    }
+
+    #section2 > div {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .modal > form {
+        padding: 50px;
+        width: calc(90% - 100px);
+    }
+
+    #alterateProduct > div {
+        width: 90%;
+        height: 70vh;
+    }
+
+    #alterateProductClose {
+        top: 17%;
+        right: 9%;
+        width: 80px;
+        height: 80px;
+    } 
+
+    input {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    
+    form {
+        padding: 50px 25px;
+        width: calc(90% - 50px);
+        height: calc(60vh - 50px);
+        justify-content: center;
+        gap: 50px;
+    }
+
+    form > section:first-child {
+        gap: 50px;
+    }
+
+    #alterateProduct > div {
+        height: 90vh;
+    }
+
+    #alterateProductClose {
+        top: 5%;
+        right: 5%;
+    }
+
+    #section1 {
+        width: 100% !important;
+        flex-direction: column;
+    }
+
+    #section1 > div {
+        margin: 0;
+        width: unset !important;
+    }
+
+    #alterateProduct > div > div {
+        margin-top: -70px;
+        width: 90%;
+        height: 180px;
+        gap: 35px;
+        flex-direction: column;
+    }
+}

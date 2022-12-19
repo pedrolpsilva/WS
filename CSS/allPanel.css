@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.5px;
+    font-family: 'Albert Sans';
+    color: var(--text);
+}
+
+:root {
+    --primary: #0B2163;
+    --secondary: #07E57F;
+    --quaternary: #E50707;
+    --text: #FFF;
+    --title: 24px;
+    --titleWeight: 600;
+}
+header a {
+    display: flex;
+    justify-content: center;
+}
+header img {
+    width: 65%;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-left: 150px;
+    margin-right: 100px;
+    width: calc(100% - 250px);
+    height: 113vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > div {
+    max-width: 1803px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#titleAlterate {
+    width: 100%;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+#contentProduct {
+    width: 100%;
+    column-gap: 139px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contentProduct > div {
+    margin-bottom: 50px;
+    min-width: 330px;
+    width: 330px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-repeat: no-repeat !important;
+    background-position: 15% 50% !important;
+    background-size: 19% !important;
+    background-color: var(--primary) !important;
+    box-shadow: 0px 6px 17px -9px var(--primary);
+}
+
+#contentProduct > div > div {
+    margin-left: 40%;
+    width: 60%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    transition: 0.4s ease-in-out;
+}
+
+.productTitle {
+    font-size: 15px;
+    color: var(--secondary);
+}
+
+.productName {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+#contentProduct > div> section {
+    width: 100%;
+    height: 75%;
+    gap: 18px;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section > button {
+    width: 23%;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productAlterateEdit {
+    width: 23%;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    box-shadow: 0px 6px 17px -9px var(--secondary);
+}
+
+.productAlterateDelete {
+    width: 23%;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--quaternary);
+    background-color: var(--quaternary);
+    box-shadow: 0px 6px 17px -9px var(--quaternary);
+}
+
+#contentProduct > div:hover {
+    transition: 0.4s ease-in-out;
+    background-size: 30% !important;
+    background-position: -5% 118% !important;
+}
+
+#contentProduct > div:hover > div{
+    margin: 25px 0 0 25px;
+    width: calc(100% - 15px);
+    height: calc(15% - 15px);
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#contentProduct > div:hover > div > p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#contentProduct > div:hover > section {
+    display: flex;
+}
+
+@media only screen and (max-width:1440px) {
+    #contentProduct {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #content {
+        height: 150vh;
+    }
+
+    #contentProduct {
+        height: 120vh;
+        column-gap: 53px
+    }
+
+    #contentProduct > div {
+        min-width: 288px;
+        width: 288px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #contentProduct {
+        height: auto;
+        column-gap: 15px;
+        row-gap: 25px;
+    }
+
+    #contentProduct > div{
+        min-width: 250px;
+        width: 250px;
+        height: 170px;
+        background-position: 10% 50%;
+    }
+
+    #contentProduct > div > div {
+        margin-left: 35%;
+        width: 65%;
+    }
+
+    .productName {
+        font-size: 20px;
+    }
+
+    .productAlterateEdit {
+        width: 70px;
+    }
+
+    .productAlterateDelete {
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    header {
+        padding: 0 50px;
+        width: calc(100% - 100px);
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > a {
+        padding: 0 !important;
+    }
+
+    main {
+        margin: 0;
+        padding-top: 15%;
+        width: 100%;
+        align-items: center;
+    }
+
+    #contentProduct {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    #contentProduct > div {
+        min-width: 180px;
+        width: 180px;
+        height: 110px;
+        background-position: 6% 50%;
+    }
+
+    #contentProduct > div > div {
+        margin-left: 30%;
+        width: 70%;
+    }
+
+    .productTitle {
+        font-size: 12px;
+    }
+
+    .productName {
+        font-size: 15px;
+    }
+
+    .productAlterateEdit {
+        width: 50px;
+        height: 50px;
+        font-size: 10px;
+    }
+    
+    .productAlterateDelete {
+        width: 50px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    #contentProduct > div:hover > div {
+        margin: 15px 0 0 15px;
+        gap: 5px;
+    }
+
+    #contentProduct > div:hover > div > p {
+        font-size: 10px;
+        font-weight: 200;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    #contentProduct > div {
+        min-width: 161px;
+        width: 161px;
+        height: 110px;
+    }
+
+    .productTitle {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .productName {
+        font-size: 12px;
+    }
+}
